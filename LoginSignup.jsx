@@ -4,11 +4,16 @@ import'./LoginSignup.css'
 import user_icon from '../Assets/person.png'
 import email_icon from '../Assets/email.png'
 import password_icon from '../Assets/password.png'
+import tool_icon from '../Assets/tool.webp'
+import google_icon from '../Assets/google.jpg'
 
 const LoginSignup = () => {
   return (
     <div className='container'>
         <div className="header">
+            <div className="tool">
+                <img src={tool_icon} alt="" />
+            </div>
             <div className="text">
                 Let's Get Started
             </div>
@@ -33,12 +38,13 @@ const LoginSignup = () => {
                 <input type="password" placeholder='Your password' />
             </div>
         </div>
-        <div className="forgot-password">
-            Lost Password? <span>Click Here!</span>
-        </div>
+      
         <div className="submit-container">
-            <div className="submit">Sign Up</div>
-            <div className="submit">LogIn</div>
+            <div className="submit">Sign In</div> 
+           
+        </div>
+        <div className="forgot-password">
+            Don't have an account <span>Sign Up</span>
         </div>
     </div>
   )
